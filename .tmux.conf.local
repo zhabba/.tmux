@@ -1,3 +1,7 @@
+# cat << ►_◄ > /dev/null
+
+# -- configuration variables ---------------------------------------------------
+
 # use the powerline patched font variant of the theme, possible values are:
 #   - default
 #   - powerline
@@ -115,3 +119,19 @@ tmux_conf_new_session_prompt=false
 #set -g history-limit 10000
 
 #set -g status-position top
+
+# /!\ IMPORTANT, you must use proper quoting here
+tmux_conf_theme_status_right_custom='#(cut -c3- ~/.tmux.conf.local | sh -s status_right_custom)$right_separator'
+
+# -- 8< ------------------------------------------------------------------------
+
+# ►_◄
+#
+# # exit the script if any statement returns a non-true return value
+# set -e
+
+# status_right_custom() {
+#   echo " hi! "
+# }
+#
+# $@
