@@ -5,8 +5,8 @@ Self-contained, pretty and versatile `.tmux.conf` configuration file.
 
 ![Screenshot](https://cloud.githubusercontent.com/assets/553208/9889393/85e50e4e-5bfa-11e5-99d8-76572350803a.gif)
 
-The `1.9` branch targets tmux `1.9`. You may want to use the `2.0` or `master`
-branch.
+The `1.9` branch targets tmux `1.9`. You may want to use the `2.0`, `2.1` or
+`master` branch.
 
 Features
 --------
